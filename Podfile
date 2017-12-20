@@ -9,6 +9,6 @@ target 'CryptocurrencyTracker' do
   pod 'Alamofire', '~> 4.5'
   pod 'Fabric'
   pod 'Crashlytics'
-  pod 'FlowingMenu', '~> 3.0.0'
+  pod 'InteractiveSideMenu'
 
 end
