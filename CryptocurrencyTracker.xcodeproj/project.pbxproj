@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4B16E6321FEAA8580083331D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E6311FEAA8580083331D /* AppDelegate.swift */; };
-		4B16E6341FEAA8580083331D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E6331FEAA8580083331D /* ViewController.swift */; };
+		4B16E6341FEAA8580083331D /* CTSplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E6331FEAA8580083331D /* CTSplashScreenVC.swift */; };
 		4B16E6371FEAA8580083331D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E6351FEAA8580083331D /* Main.storyboard */; };
 		4B16E6391FEAA8580083331D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E6381FEAA8580083331D /* Assets.xcassets */; };
 		4B16E63C1FEAA8580083331D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E63A1FEAA8580083331D /* LaunchScreen.storyboard */; };
+		4B16E64B1FEADEC30083331D /* CTHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E64A1FEADEC30083331D /* CTHomeVC.swift */; };
+		4B16E64D1FEADF3C0083331D /* CTExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E64C1FEADF3C0083331D /* CTExploreVC.swift */; };
 		E617E0A703D599D89989A107 /* Pods_CryptocurrencyTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +21,13 @@
 		2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptocurrencyTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E62E1FEAA8580083331D /* CryptocurrencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E6311FEAA8580083331D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B16E6331FEAA8580083331D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B16E6331FEAA8580083331D /* CTSplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSplashScreenVC.swift; sourceTree = "<group>"; };
 		4B16E6361FEAA8580083331D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B16E6381FEAA8580083331D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B16E63B1FEAA8580083331D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B16E63D1FEAA8580083331D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B16E64A1FEADEC30083331D /* CTHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHomeVC.swift; sourceTree = "<group>"; };
+		4B16E64C1FEADF3C0083331D /* CTExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTExploreVC.swift; sourceTree = "<group>"; };
 		B9B47B1068E5669059388851 /* Pods-CryptocurrencyTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		C39352CE0C885A4BEC37EBAD /* Pods-CryptocurrencyTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,14 +82,40 @@
 		4B16E6301FEAA8580083331D /* CryptocurrencyTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4B16E6461FEADCFD0083331D /* Model */,
+				4B16E6491FEADD7C0083331D /* View */,
+				4B16E6471FEADD130083331D /* Controller */,
 				4B16E6311FEAA8580083331D /* AppDelegate.swift */,
-				4B16E6331FEAA8580083331D /* ViewController.swift */,
 				4B16E6351FEAA8580083331D /* Main.storyboard */,
 				4B16E6381FEAA8580083331D /* Assets.xcassets */,
 				4B16E63A1FEAA8580083331D /* LaunchScreen.storyboard */,
 				4B16E63D1FEAA8580083331D /* Info.plist */,
 			);
 			path = CryptocurrencyTracker;
+			sourceTree = "<group>";
+		};
+		4B16E6461FEADCFD0083331D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B16E6471FEADD130083331D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B16E6491FEADD7C0083331D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B16E6331FEAA8580083331D /* CTSplashScreenVC.swift */,
+				4B16E64A1FEADEC30083331D /* CTHomeVC.swift */,
+				4B16E64C1FEADF3C0083331D /* CTExploreVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B16E6341FEAA8580083331D /* ViewController.swift in Sources */,
+				4B16E6341FEAA8580083331D /* CTSplashScreenVC.swift in Sources */,
+				4B16E64B1FEADEC30083331D /* CTHomeVC.swift in Sources */,
 				4B16E6321FEAA8580083331D /* AppDelegate.swift in Sources */,
+				4B16E64D1FEADF3C0083331D /* CTExploreVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
