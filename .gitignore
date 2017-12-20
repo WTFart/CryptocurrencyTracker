@@ -1,0 +1,16 @@
+# Cryptocurrency project since 20 Dec 2017
+
+# CocoaPods
+Pods/
+
+# Fastlane
+Fastlane/
+
+# Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS file
+.DS_Store
