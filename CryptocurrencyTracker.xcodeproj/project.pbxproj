@@ -12,9 +12,11 @@
 		4B16E6371FEAA8580083331D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E6351FEAA8580083331D /* Main.storyboard */; };
 		4B16E6391FEAA8580083331D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E6381FEAA8580083331D /* Assets.xcassets */; };
 		4B16E63C1FEAA8580083331D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E63A1FEAA8580083331D /* LaunchScreen.storyboard */; };
+		E617E0A703D599D89989A107 /* Pods_CryptocurrencyTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptocurrencyTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E62E1FEAA8580083331D /* CryptocurrencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E6311FEAA8580083331D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B16E6331FEAA8580083331D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4B16E6381FEAA8580083331D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B16E63B1FEAA8580083331D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B16E63D1FEAA8580083331D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B47B1068E5669059388851 /* Pods-CryptocurrencyTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		C39352CE0C885A4BEC37EBAD /* Pods-CryptocurrencyTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E617E0A703D599D89989A107 /* Pods_CryptocurrencyTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CC7E278277BC3D7A78127F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B47B1068E5669059388851 /* Pods-CryptocurrencyTracker.debug.xcconfig */,
+				C39352CE0C885A4BEC37EBAD /* Pods-CryptocurrencyTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		156C39F6B353C9B4FED83C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B16E6251FEAA8580083331D = {
 			isa = PBXGroup;
 			children = (
 				4B16E6301FEAA8580083331D /* CryptocurrencyTracker */,
 				4B16E62F1FEAA8580083331D /* Products */,
+				0CC7E278277BC3D7A78127F7 /* Pods */,
+				156C39F6B353C9B4FED83C7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B16E6401FEAA8580083331D /* Build configuration list for PBXNativeTarget "CryptocurrencyTracker" */;
 			buildPhases = (
+				9117B318AFED849F85789D41 /* [CP] Check Pods Manifest.lock */,
 				4B16E62A1FEAA8580083331D /* Sources */,
 				4B16E62B1FEAA8580083331D /* Frameworks */,
 				4B16E62C1FEAA8580083331D /* Resources */,
+				6328E2D38F192FB5F2B5591C /* [CP] Embed Pods Frameworks */,
+				D9490A8B0F2BB5F0D25ADE70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6328E2D38F192FB5F2B5591C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FlowingMenu/FlowingMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlowingMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9117B318AFED849F85789D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptocurrencyTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9490A8B0F2BB5F0D25ADE70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptocurrencyTracker/Pods-CryptocurrencyTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B16E62A1FEAA8580083331D /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		4B16E6411FEAA8580083331D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B47B1068E5669059388851 /* Pods-CryptocurrencyTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		4B16E6421FEAA8580083331D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39352CE0C885A4BEC37EBAD /* Pods-CryptocurrencyTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

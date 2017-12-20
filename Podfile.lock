@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Fabric (1.7.2)
+  - FlowingMenu (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Crashlytics
+  - Fabric
+  - FlowingMenu (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  FlowingMenu: 2e9a4bc7bcb746b517d71064b7a45d0caea8d6c3
+
+PODFILE CHECKSUM: df0853e69c6fa190f609a2df161843a4c50fcfae
+
+COCOAPODS: 1.3.1
