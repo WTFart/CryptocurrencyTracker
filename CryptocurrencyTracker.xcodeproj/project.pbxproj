@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1296D2971FFBCA3500D7D9CF /* CTHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */; };
 		4B16E6321FEAA8580083331D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E6311FEAA8580083331D /* AppDelegate.swift */; };
 		4B16E6341FEAA8580083331D /* CTSplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16E6331FEAA8580083331D /* CTSplashScreenVC.swift */; };
 		4B16E6371FEAA8580083331D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B16E6351FEAA8580083331D /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHttpManager.swift; sourceTree = SOURCE_ROOT; };
 		2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptocurrencyTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E62E1FEAA8580083331D /* CryptocurrencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E6311FEAA8580083331D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		4B16E6461FEADCFD0083331D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				4B16E6341FEAA8580083331D /* CTSplashScreenVC.swift in Sources */,
 				4B16E64B1FEADEC30083331D /* CTHomeVC.swift in Sources */,
 				4B16E6321FEAA8580083331D /* AppDelegate.swift in Sources */,
+				1296D2971FFBCA3500D7D9CF /* CTHttpManager.swift in Sources */,
 				4B16E64D1FEADF3C0083331D /* CTExploreVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
