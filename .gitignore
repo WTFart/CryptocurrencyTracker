@@ -15,3 +15,4 @@ Fastlane/
 # macOS file & other unnecessary file
 .DS_Store
 .xcuserstate
+xcuserdata/
