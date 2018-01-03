@@ -12,5 +12,6 @@ Fastlane/
 *.dSYM.zip
 *.dSYM
 
-# macOS file
+# macOS file & other unnecessary file
 .DS_Store
+.xcuserstate
