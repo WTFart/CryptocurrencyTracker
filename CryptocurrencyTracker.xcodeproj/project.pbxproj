@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHttpManager.swift; sourceTree = SOURCE_ROOT; };
+		1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CTHttpManager.swift; path = CryptocurrencyTracker/Model/CTHttpManager.swift; sourceTree = SOURCE_ROOT; };
 		2FD10E564AEBEC4DEFA41713 /* Pods_CryptocurrencyTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptocurrencyTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E62E1FEAA8580083331D /* CryptocurrencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B16E6311FEAA8580083331D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +55,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		12E297B21FFCF2DC00489381 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		156C39F6B353C9B4FED83C7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +92,8 @@
 		4B16E6301FEAA8580083331D /* CryptocurrencyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				4B16E6461FEADCFD0083331D /* Model */,
+				12E297B21FFCF2DC00489381 /* Model */,
 				4B16E6491FEADD7C0083331D /* View */,
-				4B16E6471FEADD130083331D /* Controller */,
 				4B16E6311FEAA8580083331D /* AppDelegate.swift */,
 				4B16E6351FEAA8580083331D /* Main.storyboard */,
 				4B16E6381FEAA8580083331D /* Assets.xcassets */,
@@ -94,21 +101,6 @@
 				4B16E63D1FEAA8580083331D /* Info.plist */,
 			);
 			path = CryptocurrencyTracker;
-			sourceTree = "<group>";
-		};
-		4B16E6461FEADCFD0083331D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1296D2961FFBCA3500D7D9CF /* CTHttpManager.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4B16E6471FEADD130083331D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		4B16E6491FEADD7C0083331D /* View */ = {
